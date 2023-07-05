@@ -4,15 +4,16 @@ import * as THREE from "three";
 //canvas
 const canvas = document.querySelector("#webgl");
 
-async function loadTex(url) {
-  const texLoader = new THREE.TextureLoader();
-  const texture = await texLoader.loadAsync(url);
-  return texture;
-}
+// async function loadTex(url) {
+//   const texLoader = new THREE.TextureLoader();
+//   const texture = await texLoader.loadAsync(url);
+//   return texture;
+// }
 
 //シーン
 const scene = new THREE.Scene();
-const bgTexture = await loadTex("image/scene-bg.JPG");
+const textureLoader = new THREE.TextureLoader();
+const bgTexture = textureLoader.load("image/scene-bg.jpg");
 scene.background = bgTexture;
 
 //サイズ
