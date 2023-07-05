@@ -1,19 +1,14 @@
 import './style.css'
 import * as THREE from "three";
+import bgimage from "./images/scene-bg.jpg"
 
 //canvas
 const canvas = document.querySelector("#webgl");
 
-// async function loadTex(url) {
-//   const texLoader = new THREE.TextureLoader();
-//   const texture = await texLoader.loadAsync(url);
-//   return texture;
-// }
-
 //シーン
 const scene = new THREE.Scene();
 const textureLoader = new THREE.TextureLoader();
-const bgTexture = textureLoader.load("./images/scene-bg.jpg");
+const bgTexture = textureLoader.load(bgimage);
 scene.background = bgTexture;
 
 //サイズ
