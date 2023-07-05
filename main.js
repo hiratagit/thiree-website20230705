@@ -12,9 +12,9 @@ const canvas = document.querySelector("#webgl");
 
 //シーン
 const scene = new THREE.Scene();
-const textureLoader = new THREE.TextureLoader();
-const bgTexture = textureLoader.load("image/scene-bg.jpg");
-scene.background = bgTexture;
+// const textureLoader = new THREE.TextureLoader();
+// const bgTexture = textureLoader.load("image/scene-bg.jpg");
+// scene.background = bgTexture;
 
 //サイズ
 const sizes = {
@@ -23,7 +23,7 @@ const sizes = {
 };
 
 //レンダラー
-const renderer = new THREE.WebGLRenderer({ canvas: canvas });
+const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true });
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(window.devicePixelRatio);
 
