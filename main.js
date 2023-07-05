@@ -13,7 +13,7 @@ const canvas = document.querySelector("#webgl");
 //シーン
 const scene = new THREE.Scene();
 const textureLoader = new THREE.TextureLoader();
-const bgTexture = textureLoader.load("image/scene-bg.jpg");
+const bgTexture = textureLoader.load("./images/scene-bg.jpg");
 scene.background = bgTexture;
 
 //サイズ
