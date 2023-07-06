@@ -24,13 +24,14 @@ canvas {
 main {
   position: absolute;
   width: 100vw;
-  height: 200vh;
+  height: auto;
   z-index: 100;
   justify-content: center;
   text-align: center;
   font-size: 4rem;
   margin-top: 70px;
   pointer-events: none;
+  overflow-x: hidden;
 }
 
 section {
@@ -38,3 +39,21 @@ section {
   padding: 20px;
   font-size: 3.5rem;
 } 
+
+.en-large {
+  font-size: clamp(3rem, 3.5vw + 2.5rem, 10rem);
+}
+
+.en-middle {
+  margin-top: .25em;
+  font-size: clamp(1.75rem, 5vw + 0.5rem, 3.5rem);
+}
+
+.jp-middle {
+  font-size: clamp(2.75rem, 5vw + 0.5rem, 3.5rem);
+}
+
+h1, h2, p {
+  line-height: 1.2;
+  margin-bottom : .25em;
+}
