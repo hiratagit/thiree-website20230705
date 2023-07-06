@@ -14,7 +14,7 @@ scene.background = bgTexture;
 //サイズ
 const sizes = {
   width: innerWidth,
-  height: innerHeight,
+  height: innerHeight
 };
 
 //レンダラー
